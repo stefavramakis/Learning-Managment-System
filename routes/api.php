@@ -44,4 +44,4 @@ Route::middleware('auth:sanctum')
 
 // Completion create api request.
 Route::middleware('auth:sanctum')
-    ->get('/create_completion', [CreateCompletionController::class, 'create']);
+    ->post('/create_completion', [CreateCompletionController::class, 'create']);

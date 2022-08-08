@@ -18,7 +18,7 @@ class EnrollCourseController extends Controller
                 $enrolment->user_id = $req['user_id'];
                 $enrolment->course_id = $req['course_id'];
                 $enrolment->course_enrolled = 1;
-                $enrolment->course_completed = 0;
+                $enrolment->course_completed = 1;
                 $enrolment->save();
             }
             $counter++;
